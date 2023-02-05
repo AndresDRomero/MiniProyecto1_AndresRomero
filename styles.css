@@ -276,7 +276,7 @@ nav{
 }
 
 .aboutme-header h2{
-    color: #f0522a;
+    color: #1085d3;
 }
 
 .aboutme-header h4{
@@ -291,6 +291,78 @@ nav{
     margin: 20px 30px;
 
 }
+
+.div-form{
+    width: 100%;
+    max-width: 1100px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(1);
+    grid-gap: 50px;
+    margin: 90px;
+}
+.div-form h2{
+    margin-bottom: 15px;
+    font-size: 35px;
+
+}
+
+.div-form p{
+    font-size: 17px;
+    line-height: 1.6px;
+    margin-bottom: 30px;
+}
+
+.div-form a{
+    font-size: 17px;
+    display: inline-block;
+    text-decoration: none;
+    width: 100%;
+    margin-bottom: 15px;
+    color: #000000;
+    font-weight: 700px;
+
+}
+.div-form i{
+    color: #209dc4;
+    margin-right: 10px;
+}
+
+.div-form form .campo, textarea{
+    width: 100%;
+    padding: 15px 10px;
+    font-size: 15px;
+    border: 1px solid #dbdbdb;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    outline: 0px;
+}
+
+.div-form form textarea{
+    max-width: 530px;
+    min-width: 530px;
+    min-height: 140px;
+    max-height: 150px;
+}
+
+.div-form .btn-enviar{
+    padding: 15px;
+    font-size: 16px;
+    border: none;
+    outline: 0;
+    background: #1085d3;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all .3s ease;
+
+}
+
+.div-form .btn-enviar:hover{
+    background: #0d66a1;
+
+}
+
 
 @media (max-width: 854px){
     .card-aboutme{
