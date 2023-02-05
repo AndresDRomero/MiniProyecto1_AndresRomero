@@ -14,9 +14,12 @@
 body {
     font-family: "Inter", sans-serif;
     background-color: var(--gray-1);
-    overflow: auto;
+    
 }
 
+.text-center{
+    text-align: center;
+}
 
 .nav-enlace{
     display: inline;
@@ -76,7 +79,7 @@ nav{
 }
 
 .pag-inicio {
-    position: static;
+    position:relative;
     background: #1085d3;
     width: 100%;
     color: #f1f1f1;
@@ -124,18 +127,6 @@ nav{
 
 }
 
-
-.main-title-hero{
-    color: #000000;
-    font-style: normal;
-    font-size: 32px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 2em;
-
-}
-
 .imagenes-hero{
     width: 100%;
     height: 100%;
@@ -149,7 +140,6 @@ nav{
 }
 
 .botones{
-    
     font-size: 30px;
     width: 70px;
     height: 70px; 
@@ -178,6 +168,61 @@ nav{
 .adelante{
     right: 2%;
     top: calc(50% - 70px);
+}
+
+
+.sec-experience{
+    padding: 50px 0;
+    margin: 0 auto;
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.div-experience{
+    background-color: rgba(181, 197, 197, 0.274);
+    color: 1px solid #333;
+    border: 1px solid #333;
+    margin: 0 auto;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 10px 10px 5px rgba(105, 157, 167, 0.342);
+    width: 22%;
+    box-sizing: border-box;
+
+}
+
+.div-experience:hover{
+    padding: 12px;
+
+}
+
+.texto-experience{
+    padding: 10px;
+
+}
+
+.boton-experience{
+    background: var(--blue-1);
+    text-decoration: none;
+    display: block;
+    padding: 10px;
+    color: #fff;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.boton-experience:hover{
+
+    background-color: #209dc4;
+}
+
+.titulo-experience{
+    padding-bottom: 15px;
+
 }
 
 @media (max-width: 854px) {
@@ -215,5 +260,21 @@ nav{
         color: #000000;
         font-size: 25px;
     
+    }
+}
+
+@media (max-width: 1450px){
+    .div-experience{
+        width: 45%;
+        margin-bottom: 30px;
+
+    }
+}
+
+@media (max-width: 700px){
+    .div-experience{
+        width: 100%;
+        margin-bottom: 30px;
+
     }
 }
