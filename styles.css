@@ -1,0 +1,164 @@
+:root {
+    --dark: #1a202c;
+    --gray-1: #dae0e7;
+    --gray-2: #424c5a;
+    --blue-1: #2a66dd;
+}
+  
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: "Inter", sans-serif;
+    background-color: var(--gray-1);
+    overflow: auto;
+}
+
+
+.nav-enlace{
+    display: inline;
+    color: var(--gray-2);
+    text-decoration: none;
+    font-style: normal;
+    font-size: 20px;
+    line-height: 19px;
+    padding-left: 35px;
+    
+}
+
+.nav-enlace:hover{
+    color: #000000;
+    font-size: 22px;
+
+}
+
+nav{
+    padding: auto;
+    padding: 25px;
+    color: var(--gray-2);
+    text-decoration: none;
+    display: flex;
+    justify-content: flex-end;
+    background-color: white;
+    padding: auto;
+    align-items:center;
+
+}
+
+.logo {
+    height: 50px;
+    display: flex;
+    align-items:center;
+    margin: auto;
+    margin-left: 5px;
+    margin-top: 0%;
+    margin-bottom: 0%;
+}
+.main-title {
+    color: #000000;
+    align-items:center;
+    font-style: normal;
+    font-size: 40px;
+
+}
+
+.button-expand-menu{
+    display: none;
+    outline: none;
+    padding: 0;
+    border: none;
+    background: none;
+    padding: 0px 10px;
+
+}
+
+.pag-inicio {
+    position: static;
+    background: #1085d3;
+    width: 100%;
+    color: #f1f1f1;
+    text-align:center;
+}
+
+.titulo-inicio {
+    padding-top: 125px;
+    padding-bottom: 100px;
+    margin:0px auto;
+    font-size: 40px;
+    line-height: 39px;;
+}
+
+.subtitulo-inicio {
+
+    font-size: 18px;
+    line-height: 19px;
+    padding-bottom: 90px;
+    width: auto;
+    text-align: center;
+}
+
+
+.boton-inicio{
+    border-radius: 30px;
+    background: transparent;
+    border-color: white;
+    height: 100px;
+    width: 200px;
+    margin-bottom: 50px;
+}
+
+
+.imagen-boton-descarga{
+    padding: 0;
+    margin: 0;
+    height: 55px;
+
+}
+
+.titulo-boton-descarga{
+    color: white;
+    font-size: 15px;
+
+}
+
+
+@media (max-width: 854px) {
+
+    .button-expand-menu{
+        display: inline-block;
+        align-items:baseline;
+    }
+
+    nav{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .desaparece{
+        display: none;
+    }
+
+    .logo {
+        height: 70px;
+        margin: 0 0;
+        align-items: center;
+    }
+
+    .main-title {
+        display: none   
+    }
+
+    .nav-enlace{
+        font-size: 22px;
+        padding: 7px;
+    }
+    
+    .nav-enlace:hover{
+        color: #000000;
+        font-size: 25px;
+    
+    }
+}
