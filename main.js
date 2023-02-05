@@ -47,6 +47,36 @@ document.addEventListener("DOMContentLoaded", () => {
     carrou(carrousel);
 });
 
-function redirect_swim(){
-    window.location.href="https://swimapp.io/"; 
-}
+
+const nombre = document.getElementById("name")
+const email = document.getElementById("email")
+const comentario = document.getElementById("comentario")
+const form = document.getElementById("form")
+
+form.addEventListener("submit", e=> {
+    let regexEmail = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\-\w{2,3})+$/
+    let entrar = false
+    if(nombre.value.lenght <3){
+        window.alert('El nombre no es válido')
+        entrar = true
+    }
+
+    console.log(regexEmail.text(email.value))
+    if(regexEmail.text(email.value)){
+        window.alert('El email no es válido')
+        entrar = true
+    }
+    
+    if(comentario.value.lenght <10){
+        window.alert('El comentario es muy corto')
+        entrar = true
+    }
+
+    if(entrar){
+        alert('Formulario tuvo un error')
+    }else{
+        alert('Formulario enviado satisfactoriamente')
+
+    }
+    
+})
