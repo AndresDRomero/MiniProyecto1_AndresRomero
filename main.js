@@ -46,3 +46,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     carrou(carrousel);
 });
+
+function redirect_swim(){
+    window.location.href="https://swimapp.io/"; 
+}
