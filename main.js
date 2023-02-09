@@ -5,7 +5,7 @@ function display_menu(){
     }
 }
 
-var imagenes = ['/Imagenes/img1.jpg', '/Imagenes/img2.jpg', '/Imagenes/img3.jpg', '/Imagenes/img4.jpg'],
+var imagenes = ['./Imagenes/img1.jpg', './Imagenes/img2.jpg', './Imagenes/img3.jpg', './Imagenes/img4.jpg'],
     cont = 0;
 
 function carrou(carrousel){
